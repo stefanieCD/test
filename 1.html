@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>客户信息管理</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .edit, .delete {
+            padding: 5px 10px;
+            text-decoration: none;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 3px;
+            margin-right: 5px;
+        }
+        .delete {
+            background-color: #f44336;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .details {
+            float: right;
+            width: 30%;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-left: 1px solid #ddd;
+        }
+        .details h2 {
+            margin-top: 0;
+        }
+        .details input[type="text"] {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        .details button {
+            padding: 5px 10px;
+        }
+        .search-form {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .search-form input[type="text"], .search-form input[type="submit"] {
+            padding: 5px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>客户信息管理</h1>
+    </header>
+
+    <table>
+        <thead>
+            <tr>
+                <th>客户ID</th>
+                <th>客户名称</th>
+                <th>默认地址</th>
+                <th>联系人</th>
+                <th>联系电话</th>
+                <th>拨打电话次数</th>
+                <th>总交易额</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>11</td>
+                <td>演示客户</td>
+                <td>福州大学城旗山校区</td>
+                <td>陈一城</td>
+                <td>1903867-329</td>
+                <td>0</td>
+                <td>30.12</td>
+                <td><a href="#" class="edit">编辑</a> <a href="#" class="delete">删除</a></td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>秦始皇</td>
+                <td>四川成都费祎董允</td>
+                <td>陈一城</td>
+                <td>2317238-172</td>
+                <td>5</td>
+                <td>9208.2</td>
+                <td><a href="#" class="edit">编辑</a> <a href="#" class="delete">删除</a></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>赵云</td>
+                <td>北京市南湖赵忠祥</td>
+                <td>陈一城</td>
+                <td>1213131-89</td>
+                <td>3</td>
+                <td>8469.46</td>
+                <td><a href="#" class="edit">编辑</a> <a href="#" class="delete">删除</a></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>孙尚香</td>
+                <td>成都市武侯区周瑜</td>
+                <td>陈一城</td>
+                <td>888-999-0000</td>
+                <td>3</td>
+                <td>9320</td>
+                <td><a href="#" class="edit">编辑</a> <a href="#" class="delete">删除</a></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>曹操</td>
+                <td>武汉市江汉区刘备</td>
+                <td>陈一城</td>
+                <td>555-666-7777</td>
+                <td>2</td>
+                <td>7060</td>
+                <td><a href="#" class="edit">编辑</a> <a href="#" class="delete">删除</a></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>孙权</td>
+                <td>深圳市南山区周瑜</td>
+                <td>陈一城</td>
+                <td>222-333-4444</td>
+                <td>1</td>
+                <td>15595</td>
+                <td><a href="#" class="edit">编辑</a> <a href="#" class="delete">删除</a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>刘禅</td>
+                <td>广州市天河区刘备</td>
+                <td>陈一城</td>
+                <td>111-222-3333</td>
+                <td>4</td>
+                <td>1217.5</td>
+                <td><a href="#" class="edit">编辑</a> <a href="#" class="delete">删除</a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>张三</td>
+                <td>北京市丰台区李四</td>
+                <td>陈一城</td>
+                <td>123-456-7890</td>
+                <td>1</td>
+                <td>1000</td>
+                <td><a href="#" class="edit">编辑</a> <a href="#" class="delete">删除</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="details">
+        <h2>客户信息详情</h2>
+        <form id="customerForm">
+            <label for="customerName">客户名称:</label><br>
+            <input type="text" id="customerName" name="customerName"><br>
+            <label for="defaultAddress">默认地址:</label><br>
+            <input type="text" id="defaultAddress" name="defaultAddress"><br>
+            <label for="contactPerson">联系人:</label><br>
+            <input type="text" id="contactPerson" name="contactPerson"><br>
+            <label for="contactNumber">联系电话:</label><br>
+            <input type="text" id="contactNumber" name="contactNumber"><br>
+            <button type="submit">插入数据</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 客户信息管理</p>
+    </footer>
+</body>
+</html>

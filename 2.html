@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>供应商信息管理</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .edit, .delete {
+            padding: 5px 10px;
+            text-decoration: none;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 3px;
+            margin-right: 5px;
+        }
+        .delete {
+            background-color: #f44336;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .details {
+            float: right;
+            width: 30%;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-left: 1px solid #ddd;
+        }
+        .details h2 {
+            margin-top: 0;
+        }
+        .details input[type="text"] {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        .details button {
+            padding: 5px 10px;
+        }
+        .search-form {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .search-form input[type="text"], .search-form input[type="submit"] {
+            padding: 5px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>供应商信息管理</h1>
+    </header>
+
+    <table>
+        <thead>
+            <tr>
+                <th>供应商ID</th>
+                <th>供应商名称</th>
+                <th>客户描述</th>
+                <th>地址</th>
+                <th>联系电话</th>
+                <th>人气</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>供应商A</td>
+                <td>这是供应商A的描述</td>
+                <td>杭州市西湖区</td>
+                <td>666-7777</td>
+                <td>3500</td>
+                <td><a href="#" class="edit">编辑</a> <a href="#" class="delete">删除</a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>供应商B</td>
+                <td>这是供应商B的描述</td>
+                <td>广州市天河区</td>
+                <td>111-222-3333</td>
+                <td>790</td>
+                <td><a href="#" class="edit">编辑</a> <a href="#" class="delete">删除</a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>供应商C</td>
+                <td>这是供应商C的描述</td>
+                <td>广州市天河区</td>
+                <td>111-222-3333</td>
+                <td>500</td>
+                <td><a href="#" class="edit">编辑</a> <a href="#" class="delete">删除</a></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>供应商D</td>
+                <td>这是供应商D的描述</td>
+                <td>武汉市汉江区</td>
+                <td>555-666-7777</td>
+                <td>2500</td>
+                <td><a href="#" class="edit">编辑</a> <a href="#" class="delete">删除</a></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>供应商E</td>
+                <td>这是供应商E的描述</td>
+                <td>成都市武侯区</td>
+                <td>888-999-0000</td>
+                <td>4000</td>
+                <td><a href="#" class="edit">编辑</a> <a href="#" class="delete">删除</a></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>供应商F</td>
+                <td>这是供应商F的描述</td>
+                <td>北京市丰台区</td>
+                <td>123-456-7890</td>
+                <td>1000</td>
+                <td><a href="#" class="edit">编辑</a> <a href="#" class="delete">删除</a></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>供应商G</td>
+                <td>这是供应商G的描述</td>
+                <td>北京市西城区</td>
+                <td>987-654-3210</td>
+                <td>2000</td>
+                <td><a href="#" class="edit">编辑</a> <a href="#" class="delete">删除</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="details">
+        <h2>供应商详情</h2>
+        <label for="supplierName">供应商名称:</label><br>
+        <input type="text" id="supplierName" name="supplierName"><br>
+        <label for="description">客户描述:</label><br>
+        <input type="text" id="description" name="description"><br>
+        <label for="address">地址:</label><br>
+        <input type="text" id="address" name="address"><br>
+        <label for="phone">联系电话:</label><br>
+        <input type="text" id="phone" name="phone"><br>
+        <button>插入数据</button>
+    </div>
+
+    <footer>
+        <p>© 2024 Supplier Management System. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

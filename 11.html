@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>运输司机管理</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .details {
+            float: right;
+            width: 30%;
+            padding-left: 20px;
+        }
+        .details h2 {
+            margin-top: 0;
+        }
+        .details input[type="text"] {
+            width: calc(100% - 10px);
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+        .details button {
+            padding: 5px 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .actions button {
+            padding: 5px 10px;
+            background-color: #008CBA;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>运输司机管理</h1>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>司机ID</th>
+                <th>车辆ID</th>
+                <th>司机姓名</th>
+                <th>联系电话</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>李三付</td>
+                <td>13612345678</td>
+                <td class="actions"><button>编辑</button> <button>删除</button></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>2</td>
+                <td>华四</td>
+                <td>13987654321</td>
+                <td class="actions"><button>编辑</button> <button>删除</button></td>
+            </tr>
+            <!-- 添加更多货运司机信息 -->
+            
+            <tr>
+                <td>3</td>
+                <td>3</td>
+                <td>王五</td>
+                <td>13611222222</td>
+                <td class="actions"><button>编辑</button> <button>删除</button></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>4</td>
+                <td>赵六</td>
+                <td>13553334444</td>
+                <td class="actions"><button>编辑</button> <button>删除</button></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>5</td>
+                <td>邢七</td>
+                <td>13755566666</td>
+                <td class="actions"><button>编辑</button> <button>删除</button></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>6</td>
+                <td>孙八</td>
+                <td>13477778888</td>
+                <td class="actions"><button>编辑</button> <button>删除</button></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>7</td>
+                <td>周九</td>
+                <td>13299990000</td>
+                <td class="actions"><button>编辑</button> <button>删除</button></td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>8</td>
+                <td>十十</td>
+                <td>13100011111</td>
+                <td class="actions"><button>编辑</button> <button>删除</button></td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>9</td>
+                <td>李九</td>
+                <td>13611112222</td>
+                <td class="actions"><button>编辑</button> <button>删除</button></td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>10</td>
+                <td>刘十</td>
+                <td>13922223333</td>
+                <td class="actions"><button>编辑</button> <button>删除</button></td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>11</td>
+                <td>张十一</td>
+                <td>13533334444</td>
+                <td class="actions"><button>编辑</button> <button>删除</button></td>
+            </tr>
+            
+        </tbody>
+    </table>
+
+    <div class="details">
+        <h2>货运司机详情</h2>
+        <label for="driverId">司机ID:</label>
+        <input type="text" id="driverId"><br>
+        <label for="vehicleId">车辆ID:</label>
+        <input type="text" id="vehicleId"><br>
+        <label for="driverName">司机姓名:</label>
+        <input type="text" id="driverName"><br>
+        <label for="phoneNumber">联系电话:</label>
+        <input type="text" id="phoneNumber"><br>
+        <button>插入数据</button>
+    </div>
+
+    <div>
+        <label for="searchDriverId">货运司机查询:</label>
+        <input type="text" id="searchDriverId">
+        <button>查询货运司机</button>
+    </div>
+</body>
+</html>

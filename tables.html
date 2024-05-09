@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Tables - SB Admin</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+
+  <!-- Add custom CSS here -->
+  <link href="css/sb-admin.css" rel="stylesheet">
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="wrapper">
+
+    <!-- Sidebar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">简单集成项目</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav side-nav">
+          <li><a href="index.html"><i class="fa fa-dashboard"></i> 简介</a></li>
+          <li><a href="charts.html"><i class="fa fa-bar-chart-o"></i> 可视化</a></li>
+          <li class="active"><a href="tables.html"><i class="fa fa-table"></i> 数据库</a></li>
+          <li><a href="forms.html"><i class="fa fa-edit"></i> 控制台</a></li>
+          
+          <li><a href="1.html"><i class="fa fa-file"></i>水产品贸易中心-客户信息管理</a></li>
+            <li><a href="2.html"><i class="fa fa-file"></i>水产品贸易中心-供应商信息管理</a></li>
+            <li><a href="3.html"><i class="fa fa-file"></i>水产品贸易中心-产品信息管理</a></li>
+            <li><a href="4.html"><i class="fa fa-file"></i>水产品贸易中心-库存信息管理</a></li>
+            <li><a href="5.html"><i class="fa fa-file"></i>水产品贸易中心-入库信息管理</a></li>
+            <li><a href="6.html"><i class="fa fa-file"></i>水产品贸易中心-销售记录管理</a></li>
+            <li><a href="7.html"><i class="fa fa-file"></i>水产品贸易中心-订单记录管理</a></li>
+            <li><a href="8.html"><i class="fa fa-file"></i>水产品贸易中心-订单与销售记录关系管理</a></li>
+            <li><a href="9.html"><i class="fa fa-file"></i>水产品贸易中心-订单与供应商关系管理</a></li>
+            <li><a href="10.html"><i class="fa fa-file"></i>水产品贸易中心-签约关系管理</a></li>
+            <li><a href="11.html"><i class="fa fa-file"></i>水产品贸易中心-货运司机管理</a></li>
+            <li><a href="12.html"><i class="fa fa-file"></i>水产品贸易中心-订单与供应商关系管理</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-caret-square-o-down"></i>
+              Dropdown <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Dropdown Item</a></li>
+              <li><a href="#">Another Item</a></li>
+              <li><a href="#">Third Item</a></li>
+              <li><a href="#">Last Item</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right navbar-user">
+          <li class="dropdown messages-dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> 消息 <span
+                class="badge">7</span> <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-header">7 New Messages</li>
+              <li class="message-preview">
+                <a href="#">
+                  <span class="avatar"><img src="http://placehold.it/50x50"></span>
+                  <span class="name">John Smith:</span>
+                  <span class="message">Hey there, I wanted to ask you something...</span>
+                  <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
+                </a>
+              </li>
+              <li class="divider"></li>
+              <li class="message-preview">
+                <a href="#">
+                  <span class="avatar"><img src="http://placehold.it/50x50"></span>
+                  <span class="name">John Smith:</span>
+                  <span class="message">Hey there, I wanted to ask you something...</span>
+                  <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
+                </a>
+              </li>
+              <li class="divider"></li>
+              <li class="message-preview">
+                <a href="#">
+                  <span class="avatar"><img src="http://placehold.it/50x50"></span>
+                  <span class="name">John Smith:</span>
+                  <span class="message">Hey there, I wanted to ask you something...</span>
+                  <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
+                </a>
+              </li>
+              <li class="divider"></li>
+              <li><a href="#">View Inbox <span class="badge">7</span></a></li>
+            </ul>
+          </li>
+          <li class="dropdown alerts-dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> 设备状况 <span
+                class="badge">3</span> <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Default <span class="label label-default">Default</span></a></li>
+              <li><a href="#">Primary <span class="label label-primary">Primary</span></a></li>
+              <li><a href="#">Success <span class="label label-success">Success</span></a></li>
+              <li><a href="#">Info <span class="label label-info">Info</span></a></li>
+              <li><a href="#">Warning <span class="label label-warning">Warning</span></a></li>
+              <li><a href="#">Danger <span class="label label-danger">Danger</span></a></li>
+              <li class="divider"></li>
+              <li><a href="#">View All</a></li>
+            </ul>
+          </li>
+          <li class="dropdown user-dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b
+                class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#"><i class="fa fa-user"></i> Profile</a></li>
+              <li><a href="#"><i class="fa fa-envelope"></i> Inbox <span class="badge">7</span></a></li>
+              <li><a href="#"><i class="fa fa-gear"></i> Settings</a></li>
+              <li class="divider"></li>
+              <li><a href="#"><i class="fa fa-power-off"></i> Log Out</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </nav>
+
+    <div id="page-wrapper">
+
+      <div class="row">
+        <div class="col-lg-12">
+          <h1>数据库 <small>数据库可视化及管理</small></h1>
+          <ol class="breadcrumb">
+            <li><a href="index.html"><i class="fa fa-dashboard"></i> </a></li>
+            <li class="active"><i class="fa fa-table"></i> </li>
+          </ol>
+          <div class="alert alert-info alert-dismissable">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+            <a class="alert-link" href="http://tablesorter.com/docs/">数据库页面管理，数据同时存储于于本地数据库及云数据库内</a>
+            <button onclick="updateData()">更新同步数据库</button>
+          </div>
+        </div>
+      </div><!-- /.row -->
+      <script>
+        function updateData() {
+          // Reload the page to fetch fresh data from the database
+          location.reload();
+        }
+      </script>
+
+      <div class="col-lg-6">
+        <h2>供应商 Data</h2>
+        <div class="table-responsive">
+          <table class="table table-bordered table-hover tablesorter">
+            <thead>
+              <tr>
+                <th>供应商编号<i class="fa fa-sort"></i></th>
+                <th>商家名称<i class="fa fa-sort"></i></th>
+                <th>商家特色简介<i class="fa fa-sort"></i></th>
+                <th>商家地址<i class="fa fa-sort"></i></th>
+                <th>联系人<i class="fa fa-sort"></i></th>
+                <th>联系方式<i class="fa fa-sort"></i></th>
+                <th>热度<i class="fa fa-sort"></i></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>1</td><td>供应商A</td><td>电子产品专家</td><td>地址A</td><td>张三</td><td>1234567890</td><td>85</td></tr><tr><td>2</td><td>供应商B</td><td>时尚服饰</td><td>地址B</td><td>李四</td><td>0987654321</td><td>90</td></tr><tr><td>3</td><td>供应商C</td><td>美食天堂</td><td>地址C</td><td>王五</td><td>1122334455</td><td>75</td></tr><tr><td>4</td><td>供应商D</td><td>家居生活</td><td>地址D</td><td>赵六</td><td>6677889900</td><td>80</td></tr><tr><td>5</td><td>供应商E</td><td>运动装备</td><td>地址E</td><td>钱七</td><td>9988776655</td><td>95</td></tr>            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <h2>产品数据</h2>
+        <div class="table-responsive">
+          <table class="table table-bordered table-hover table-striped tablesorter">
+            <thead>
+              <tr>
+                <th>产品编号<i class="fa fa-sort"></i></th>
+                <th>供应商编号<i class="fa fa-sort"></i></th>
+                <th>产品名称<i class="fa fa-sort"></i></th>
+                <th>产品描述<i class="fa fa-sort"></i></th>
+                <th>产地<i class="fa fa-sort"></i></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>1</td><td>1</td><td>手机</td><td>最新款智能手机</td><td>中国</td></tr><tr><td>2</td><td>2</td><td>裙子</td><td>夏季新款连衣裙</td><td>法国</td></tr><tr><td>3</td><td>3</td><td>巧克力</td><td>进口手工巧克力</td><td>比利时</td></tr><tr><td>4</td><td>4</td><td>沙发</td><td>舒适三人沙发</td><td>意大利</td></tr><tr><td>5</td><td>5</td><td>跑鞋</td><td>专业跑步鞋</td><td>美国</td></tr>            </tbody>
+          </table>
+        </div>
+      <br><br><br><br>
+      </div>
+      
+
+
+      <div class="col-lg-6">
+        <h2>库存数据</h2>
+        <div class="table-responsive">
+          <table class="table table-hover tablesorter">
+            <thead>
+              <tr>
+                <th>产品编号<i class="fa fa-sort"></i></th>
+                </th>
+                <th>批次号<i class="fa fa-sort"></i></th>
+                </th>
+                <th>库存数量<i class="fa fa-sort"></i></th>
+                </th>
+                <th>储存位置<i class="fa fa-sort"></i></th>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>1</td><td>B1001</td><td>100</td><td>A区1号货架</td></tr><tr><td>2</td><td>B2002</td><td>200</td><td>B区2号货架</td></tr><tr><td>3</td><td>B3003</td><td>300</td><td>C区3号货架</td></tr><tr><td>4</td><td>B4004</td><td>400</td><td>D区4号货架</td></tr><tr><td>5</td><td>B5005</td><td>500</td><td>E区5号货架</td></tr>            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <h2>进货关系数据</h2>
+        <div class="table-responsive">
+          <table class="table table-hover table-striped tablesorter">
+            <thead>
+              <tr>
+                <th>产品编号<i class="fa fa-sort"></i></th>
+                <th>批次号<i class="fa fa-sort"></i></th>
+                <th>供应商编号<i class="fa fa-sort"></i></th>
+                <th>进货单价<i class="fa fa-sort"></i></th>
+                <th>入库日期<i class="fa fa-sort"></i></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>1</td><td>B1212</td><td>2</td><td>1313</td><td>2023-01-02</td></tr><tr><td>2</td><td>B2002</td><td>2</td><td>150.00</td><td>2023-01-02</td></tr><tr><td>3</td><td>B3003</td><td>3</td><td>5.00</td><td>2023-01-03</td></tr><tr><td>4</td><td>B4004</td><td>4</td><td>1000.00</td><td>2023-01-04</td></tr><tr><td>5</td><td>B5005</td><td>5</td><td>120.00</td><td>2023-01-05</td></tr><tr><td>7</td><td>B1212</td><td>2</td><td>1313</td><td>2023-01-02</td></tr>            </tbody>
+          </table>
+        </div>
+      </div>
+
+
+
+      <div class="col-lg-6">
+        <h2>销售记录数据</h2>
+        <div class="table-responsive">
+          <table class="table table-hover tablesorter">
+            <thead>
+              <tr>
+                <th>销售记录编号<i class="fa fa-sort"></i></th>
+                <th>售出单价<i class="fa fa-sort"></i></th>
+                <th>销售数量<i class="fa fa-sort"></i></th>
+                <th>产品编号<i class="fa fa-sort"></i></th>
+                <th>批次号<i class="fa fa-sort"></i></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>1</td><td>2200.00</td><td>10</td><td>1</td><td>B1001</td></tr><tr><td>2</td><td>180.00</td><td>20</td><td>2</td><td>B2002</td></tr><tr><td>3</td><td>6.00</td><td>30</td><td>3</td><td>B3003</td></tr><tr><td>4</td><td>1100.00</td><td>40</td><td>4</td><td>B4004</td></tr><tr><td>5</td><td>150.00</td><td>50</td><td>5</td><td>B5005</td></tr>            </tbody>
+          </table>
+        </div>
+      </div>
+
+
+      <div class="col-lg-6">
+        <h2>订单销售记录</h2>
+        <div class="table-responsive">
+          <table class="table table-bordered table-hover tablesorter">
+            <thead>
+              <tr>
+                <th>订单编号<i class="fa fa-sort"></i></th>
+                <th>订单总金额<i class="fa fa-sort"></i></th>
+                <th>实付金额<i class="fa fa-sort"></i></th>
+                <th>订单状态<i class="fa fa-sort"></i></th>
+                <th>发货日期<i class="fa fa-sort"></i></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>1</td><td>1500.00</td><td>1490.00</td><td>已发货</td><td>2023-05-10</td></tr><tr><td>2</td><td>280.00</td><td>280.00</td><td>待发货</td><td>2023-05-11</td></tr><tr><td>3</td><td>330.00</td><td>330.00</td><td>已发货</td><td>2023-05-09</td></tr><tr><td>4</td><td>2000.00</td><td>2000.00</td><td>待发货</td><td>2023-05-12</td></tr><tr><td>5</td><td>750.00</td><td>740.00</td><td>已发货</td><td>2023-05-08</td></tr>            </tbody>
+          </table>
+        </div>
+      </div>
+
+
+
+      <div class="col-lg-6">
+        <h2>订单销售记录关系数据</h2>
+        <div class="table-responsive">
+          <table class="table table-bordered table-hover tablesorter">
+            <thead>
+              <tr>
+                <th>销售记录编号<i class="fa fa-sort"></i></th>
+                <th>订单编号<i class="fa fa-sort"></i></th>
+                <th>单品利润<i class="fa fa-sort"></i></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>1</td><td>1</td><td>200.00</td></tr><tr><td>2</td><td>2</td><td>30.00</td></tr><tr><td>3</td><td>3</td><td>1.00</td></tr><tr><td>4</td><td>4</td><td>100.00</td></tr><tr><td>5</td><td>5</td><td>10.00</td></tr>            </tbody>
+          </table>
+        </div>
+      </div>
+
+
+      <div class="col-lg-6">
+        <h2>订单供应商关系数据</h2>
+        <div class="table-responsive">
+          <table class="table table-bordered table-hover tablesorter">
+
+
+            <thead>
+              <tr>
+                <th>订单编号<i class="fa fa-sort"></i></th>
+                <th>供应商编号<i class="fa fa-sort"></i></th>
+                <th>商品权重<i class="fa fa-sort"></i></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>1</td><td>1</td><td>1</td></tr><tr><td>2</td><td>2</td><td>2</td></tr><tr><td>3</td><td>3</td><td>3</td></tr><tr><td>4</td><td>4</td><td>1</td></tr><tr><td>5</td><td>5</td><td>2</td></tr>            </tbody>
+          </table>
+        </div>
+      </div>
+
+
+
+
+      <div class="col-lg-6">
+        <h2>客户数据</h2>
+        <div class="table-responsive">
+          <table class="table table-bordered table-hover tablesorter">
+            <thead>
+              <tr>
+                <th>客户编号<i class="fa fa-sort"></i></th>
+                <th>客户名称<i class="fa fa-sort"></i></th>
+                <th>默认地址<i class="fa fa-sort"></i></th>
+                <th>联系人<i class="fa fa-sort"></i></th>
+                <th>联系方式<i class="fa fa-sort"></i></th>
+                <th>购买次数<i class="fa fa-sort"></i></th>
+                <th>总交易额<i class="fa fa-sort"></i></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>1</td><td>张三</td><td>北京市朝阳区</td><td>张三</td><td>13800138000</td><td>5</td><td>5000.00</td></tr><tr><td>2</td><td>李四</td><td>上海市浦东区</td><td>李四</td><td>13900139000</td><td>3</td><td>3000.00</td></tr><tr><td>3</td><td>王五</td><td>广州市天河区</td><td>王五</td><td>13700137000</td><td>4</td><td>4000.00</td></tr><tr><td>4</td><td>赵六</td><td>深圳市南山区</td><td>赵六</td><td>13600136000</td><td>2</td><td>2000.00</td></tr><tr><td>5</td><td>孙七</td><td>成都市青羊区</td><td>孙七</td><td>13500135000</td><td>1</td><td>1000.00</td></tr>            </tbody>
+          </table>
+        </div>
+      </div>
+
+
+      <div class="col-lg-6">
+        <h2>签订关系数据</h2>
+        <div class="table-responsive">
+          <table class="table table-bordered table-hover tablesorter">
+
+
+            <thead>
+              <tr>
+                <th>订单编号<i class="fa fa-sort"></i></th>
+                <th>客户编号<i class="fa fa-sort"></i></th>
+                <th>折扣倍率<i class="fa fa-sort"></i></th>
+                <th>下单日期<i class="fa fa-sort"></i></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>1</td><td>1</td><td>0.80</td><td>2023-05-01</td></tr><tr><td>2</td><td>2</td><td>0.90</td><td>2023-05-02</td></tr><tr><td>3</td><td>3</td><td>0.85</td><td>2023-05-03</td></tr><tr><td>4</td><td>4</td><td>0.75</td><td>2023-05-04</td></tr><tr><td>5</td><td>5</td><td>0.95</td><td>2023-05-05</td></tr>            </tbody>
+          </table>
+        </div>
+        <br><br><br><br><br><br>
+      </div>
+
+
+      <div class="col-lg-6">
+        <h2>运货司机数据</h2>
+        <div class="table-responsive">
+          <table class="table table-bordered table-hover tablesorter">
+
+
+            <thead>
+              <tr>
+                <th>司机编号<i class="fa fa-sort"></i></th>
+                <th>车辆编号<i class="fa fa-sort"></i></th>
+                <th>司机姓名<i class="fa fa-sort"></i></th>
+                <th>联系方式<i class="fa fa-sort"></i></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>1</td><td>京A12345</td><td>王司机</td><td>13800138000</td></tr><tr><td>2</td><td>沪B23456</td><td>李司机</td><td>13900139000</td></tr><tr><td>3</td><td>粤C34567</td><td>张司机</td><td>13700137000</td></tr><tr><td>4</td><td>粤Z45678</td><td>赵司机</td><td>13600136000</td></tr><tr><td>5</td><td>川A56789</td><td>刘司机</td><td>13500135000</td></tr>            </tbody>
+          </table>
+        </div>
+      </div>
+
+
+      <div class="col-lg-6">
+        <h2>配送关系数据</h2>
+        <div class="table-responsive">
+          <table class="table table-bordered table-hover tablesorter">
+            <thead>
+              <tr>
+                <th>订单编号<i class="fa fa-sort"></i></th>
+                <th>司机编号<i class="fa fa-sort"></i></th>
+                <th>配送状态<i class="fa fa-sort"></i></th>
+                <th>配送费用<i class="fa fa-sort"></i></th>
+                <th>配送地点<i class="fa fa-sort"></i></th>
+                <th>预计送达时间<i class="fa fa-sort"></i></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>1</td><td>1</td><td>已配送</td><td>50.00</td><td>北京市朝阳区</td><td>12:00:00</td></tr><tr><td>2</td><td>2</td><td>配送中</td><td>40.00</td><td>上海市浦东区</td><td>13:00:00</td></tr><tr><td>3</td><td>3</td><td>未配送</td><td>30.00</td><td>广州市天河区</td><td>14:00:00</td></tr><tr><td>4</td><td>4</td><td>已配送</td><td>20.00</td><td>深圳市南山区</td><td>15:00:00</td></tr><tr><td>5</td><td>5</td><td>配送中</td><td>10.00</td><td>成都市青羊区</td><td>16:00:00</td></tr>            </tbody>
+          </table>
+        </div>
+      </div>
+
+
+
+
+
+
+    </div><!-- /.row -->
+
+
+
+
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+  </div><!-- /#page-wrapper -->
+
+  </div><!-- /#wrapper -->
+
+  <!-- JavaScript -->
+  <script src="js/jquery-1.10.2.js"></script>
+  <script src="js/bootstrap.js"></script>
+
+  <!-- Page Specific Plugins -->
+  <script src="js/tablesorter/jquery.tablesorter.js"></script>
+  <script src="js/tablesorter/tables.js"></script>
+
+</body>
+
+</html>

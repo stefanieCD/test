@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>库存信息管理</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .details {
+            float: right;
+            width: 30%;
+            padding-left: 20px;
+        }
+        .details h2 {
+            margin-top: 0;
+        }
+        .details input[type="text"] {
+            width: calc(100% - 10px);
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+        .details button {
+            padding: 5px 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .actions button {
+            padding: 5px 10px;
+            background-color: #008CBA;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>库存信息管理</h1>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>产品ID</th>
+                <th>批次号</th>
+                <th>库存数据</th>
+                <th>存储位置</th>
+                <th>存储</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1001</td>
+                <td>250</td>
+                <td>B仓库</td>
+                <td>250</td>
+                <td class="actions"><button>编辑</button> <button>删除</button></td>
+            </tr>
+            <tr>
+                <td>3001</td>
+                <td>370</td>
+                <td>C仓库</td>
+                <td>370</td>
+                <td class="actions"><button>编辑</button> <button>删除</button></td>
+            </tr>
+            <!-- 添加更多库存信息 -->
+            <tr>
+                <td>3002</td>
+                <td>380</td>
+                <td>D仓库</td>
+                <td>380</td>
+                <td class="actions"><button>编辑</button> <button>删除</button></td>
+            </tr>
+            <tr>
+                <td>3003</td>
+                <td>390</td>
+                <td>E仓库</td>
+                <td>390</td>
+                <td class="actions"><button>编辑</button> <button>删除</button></td>
+            </tr>
+            <tr>
+                <td>3004</td>
+                <td>400</td>
+                <td>F仓库</td>
+                <td>400</td>
+                <td class="actions"><button>编辑</button> <button>删除</button></td>
+            </tr>
+            <tr>
+                <td>3005</td>
+                <td>410</td>
+                <td>G仓库</td>
+                <td>410</td>
+                <td class="actions"><button>编辑</button> <button>删除</button></td>
+            </tr>
+            <tr>
+                <td>3006</td>
+                <td>420</td>
+                <td>H仓库</td>
+                <td>420</td>
+                <td class="actions"><button>编辑</button> <button>删除</button></td>
+            </tr>
+            <tr>
+                <td>3007</td>
+                <td>430</td>
+                <td>I仓库</td>
+                <td>430</td>
+                <td class="actions"><button>编辑</button> <button>删除</button></td>
+            </tr>
+            <tr>
+                <td>3008</td>
+                <td>440</td>
+                <td>J仓库</td>
+                <td>440</td>
+                <td class="actions"><button>编辑</button> <button>删除</button></td>
+            </tr>
+            <tr>
+                <td>3009</td>
+                <td>450</td>
+                <td>K仓库</td>
+                <td>450</td>
+                <td class="actions"><button>编辑</button> <button>删除</button></td>
+            </tr>
+            <tr>
+                <td>3010</td>
+                <td>460</td>
+                <td>L仓库</td>
+                <td>460</td>
+                <td class="actions"><button>编辑</button> <button>删除</button></td>
+            </tr>
+            
+        </tbody>
+    </table>
+
+    <div class="details">
+        <h2>库存信息详情</h2>
+        <label for="productId">产品ID:</label>
+        <input type="text" id="productId"><br>
+        <label for="batchNumber">批次号:</label>
+        <input type="text" id="batchNumber"><br>
+        <label for="stockData">库存数据:</label>
+        <input type="text" id="stockData"><br>
+        <label for="storageLocation">存储位置:</label>
+        <input type="text" id="storageLocation"><br>
+        <button>插入数据</button>
+    </div>
+
+    <div>
+        <label for="searchProductId">库存信息查询:</label>
+        <input type="text" id="searchProductId">
+        <button>查询库存信息</button>
+    </div>
+</body>
+</html>

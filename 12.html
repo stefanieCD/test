@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>配送关系管理</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .details {
+            float: right;
+            width: 30%;
+            padding-left: 20px;
+        }
+        .details h2 {
+            margin-top: 0;
+        }
+        .details input[type="text"] {
+            width: calc(100% - 10px);
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+        .details button {
+            padding: 5px 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .actions button {
+            padding: 5px 10px;
+            background-color: #008CBA;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>配送关系管理</h1>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>订单ID</th>
+                <th>客户ID</th>
+                <th>配送状态</th>
+                <th>配送费用</th>
+                <th>配送地址</th>
+                <th>预计送达时间</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>配送中</td>
+                <td>30</td>
+                <td>上海市</td>
+                <td>2023-12-08 08:14:00</td>
+                <td class="actions"><button>编辑</button> <button>删除</button></td>
+            </tr>
+            <!-- 添加更多配送关系信息 -->
+            <tr>
+                <td>21</td>
+                <td>21</td>
+                <td>配送中</td>
+                <td>30</td>
+                <td>北京市</td>
+                <td>2023-12-08 08:14:00</td>
+                <td class="actions"><button>编辑</button> <button>删除</button></td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td>22</td>
+                <td>待收货</td>
+                <td>60</td>
+                <td>北京市</td>
+                <td>2023-12-08 08:13:30</td>
+                <td class="actions"><button>编辑</button> <button>删除</button></td>
+            </tr>
+            <tr>
+                <td>23</td>
+                <td>23</td>
+                <td>已收货</td>
+                <td>40</td>
+                <td>广州市</td>
+                <td>2023-12-08 08:15:00</td>
+                <td class="actions"><button>编辑</button> <button>删除</button></td>
+            </tr>
+            <tr>
+                <td>24</td>
+                <td>24</td>
+                <td>配送中</td>
+                <td>55</td>
+                <td>深圳市</td>
+                <td>2023-12-08 08:14:00</td>
+                <td class="actions"><button>编辑</button> <button>删除</button></td>
+            </tr>
+            <tr>
+                <td>25</td>
+                <td>25</td>
+                <td>配送中</td>
+                <td>70</td>
+                <td>深圳市</td>
+                <td>2023-12-08 08:16:00</td>
+                <td class="actions"><button>编辑</button> <button>删除</button></td>
+            </tr>
+            <tr>
+                <td>26</td>
+                <td>26</td>
+                <td>配送中</td>
+                <td>80</td>
+                <td>深圳市</td>
+                <td>2023-12-08 08:17:00</td>
+                <td class="actions"><button>编辑</button> <button>删除</button></td>
+            </tr>
+            <tr>
+                <td>27</td>
+                <td>27</td>
+                <td>配送中</td>
+                <td>90</td>
+                <td>深圳市</td>
+                <td>2023-12-08 08:18:00</td>
+                <td class="actions"><button>编辑</button> <button>删除</button></td>
+            </tr>
+            <tr>
+                <td>28</td>
+                <td>28</td>
+                <td>配送中</td>
+                <td>100</td>
+                <td>深圳市</td>
+                <td>2023-12-08 08:19:00</td>
+                <td class="actions"><button>编辑</button> <button>删除</button></td>
+            </tr>
+            <tr>
+                <td>29</td>
+                <td>29</td>
+                <td>配送中</td>
+                <td>110</td>
+                <td>深圳市</td>
+                <td>2023-12-08 08:20:00</td>
+                <td class="actions"><button>编辑</button> <button>删除</button></td>
+            </tr>
+            <tr>
+                <td>30</td>
+                <td>30</td>
+                <td>配送中</td>
+                <td>120</td>
+                <td>深圳市</td>
+                <td>2023-12-08 08:21:00</td>
+                <td class="actions"><button>编辑</button> <button>删除</button></td>
+            </tr>
+            
+        </tbody>
+    </table>
+
+    <div class="details">
+        <h2>配送关系详情</h2>
+        <label for="orderId">订单ID:</label>
+        <input type="text" id="orderId"><br>
+        <label for="customerId">客户ID:</label>
+        <input type="text" id="customerId"><br>
+        <label for="deliveryStatus">配送状态:</label>
+        <input type="text" id="deliveryStatus"><br>
+        <label for="deliveryCost">配送费用:</label>
+        <input type="text" id="deliveryCost"><br>
+        <label for="deliveryAddress">配送地址:</label>
+        <input type="text" id="deliveryAddress"><br>
+        <label for="estimatedDeliveryTime">预计送达时间:</label>
+        <input type="text" id="estimatedDeliveryTime"><br>
+        <button>插入数据</button>
+    </div>
+
+    <div>
+        <label for="searchOrderId">配送关系查询:</label>
+        <input type="text" id="searchOrderId">
+        <button>查询配送关系</button>
+    </div>
+</body>
+</html>
